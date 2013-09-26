@@ -24,6 +24,7 @@
 		B7AAD43C17F46C0E00F1B5D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7AAD41417F46C0E00F1B5D3 /* Foundation.framework */; };
 		B7AAD44417F46C0E00F1B5D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7AAD44217F46C0E00F1B5D3 /* InfoPlist.strings */; };
 		B7AAD44717F46C0E00F1B5D3 /* InspiratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7AAD44617F46C0E00F1B5D3 /* InspiratorTests.m */; };
+		B7AAD45117F4D2FD00F1B5D3 /* quotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7AAD45017F4D2FD00F1B5D3 /* quotes.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		B7AAD44317F46C0E00F1B5D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B7AAD44517F46C0E00F1B5D3 /* InspiratorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InspiratorTests.h; sourceTree = "<group>"; };
 		B7AAD44617F46C0E00F1B5D3 /* InspiratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InspiratorTests.m; sourceTree = "<group>"; };
+		B7AAD45017F4D2FD00F1B5D3 /* quotes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = quotes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				B7AAD42417F46C0E00F1B5D3 /* Default.png */,
 				B7AAD42617F46C0E00F1B5D3 /* Default@2x.png */,
 				B7AAD42817F46C0E00F1B5D3 /* Default-568h@2x.png */,
+				B7AAD45017F4D2FD00F1B5D3 /* quotes.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				B7AAD42917F46C0E00F1B5D3 /* Default-568h@2x.png in Resources */,
 				B7AAD42C17F46C0E00F1B5D3 /* MainStoryboard_iPhone.storyboard in Resources */,
 				B7AAD42F17F46C0E00F1B5D3 /* MainStoryboard_iPad.storyboard in Resources */,
+				B7AAD45117F4D2FD00F1B5D3 /* quotes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

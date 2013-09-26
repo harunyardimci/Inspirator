@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <array>
+        <dict>
+            <key>quote</key>
+            <string>What lies behind us and what lies before us are tiny matters compared to what lies within us.</string>
+            <key>author</key>
+            <string>Henry Stanley Haskins</string>
+        </dict>
+        <dict>
+            <key>quote</key>
+            <string>Challenge yourself with something you know you could never do, and what you’ll find is that you can overcome anything.</string>
+            <key>author</key>
+            <string>Anonymous</string>
+        </dict>
+        <dict>
+            <key>quote</key>
+            <string>It is never too late to be what you might have been.</string>
+            <key>author</key>
+            <string>Anonymous</string>
+        </dict>
+        <dict>
+            <key>quote</key>
+            <string>All our dreams can come true–if we have the courage to pursue them.</string>
+            <key>author</key>
+            <string>Walt Disney</string>
+        </dict>
+        <dict>
+            <key>quote</key>
+            <string>The best way to predict the future is to invent it.</string>
+            <key>author</key>
+            <string>Alan Kay</string>
+        </dict>
+        <dict>
+            <key>quote</key>
+            <string>Life is 10% what happens to me and 90% how I react to it.</string>
+            <key>author</key>
+            <string>Charles R. Swindoll</string>
+        </dict>
+        <dict>
+            <key>quote</key>
+            <string>If you cannot do great things, do small things in a great way.</string>
+            <key>author</key>
+            <string>Napoleon Hill</string>
+        </dict>
+        <dict>
+            <key>quote</key>
+            <string>You miss 100% of the shots you don’t take.</string>
+            <key>author</key>
+            <string>Wayne Gretzky</string>
+        </dict>
+        <dict>
+            <key>quote</key>
+            <string>If opportunity doesn’t knock, build a door.</string>
+            <key>author</key>
+            <string>Milton Berle</string>
+        </dict>
+        <dict>
+            <key>quote</key>
+            <string>An obstacle is often a stepping stone.</string>
+            <key>author</key>
+            <string>Prescott</string>
+        </dict>
+        
+    </array>
+
+</plist>
