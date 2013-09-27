@@ -1,55 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--Inspirator View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController wantsFullScreenLayout="YES" id="2" customClass="inspiratorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O9E-NI-Rmz"/>
+                        <viewControllerLayoutGuide type="bottom" id="gPf-Ah-KYG"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="fMN-Xr-qNY">
+                                <rect key="frame" x="20" y="424" width="242" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="1nC-cr-DEB"/>
+                                    <constraint firstAttribute="height" constant="36" id="XsP-Aj-TOI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
                                 <state key="normal" title="More Inspiration?">
-                                    <color key="titleColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="showNextQuote:" destination="2" eventType="touchUpInside" id="4ag-Nj-1ic"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" text="- Albert Einstein" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Va4-Jr-fT8" userLabel="lblAuthor - - Albert Einstein">
+                                <rect key="frame" x="61" y="352" width="239" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="239" id="N0m-iy-1MF"/>
-                                    <constraint firstAttribute="height" constant="21" id="Tp7-SE-Jj8"/>
+                                    <constraint firstAttribute="height" constant="21" id="Ebb-jI-uGQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Cochin-Italic" family="Cochin" pointSize="22"/>
-                                <color key="textColor" red="0.27843138575553894" green="0.60392159223556519" blue="0.98823535442352295" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="zOD-JG-Opc">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="266" id="F2v-4d-clB"/>
-                                </constraints>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="zOD-JG-Opc">
+                                <rect key="frame" x="20" y="51" width="280" height="266"/>
                                 <string key="text">dfgsdfgsd dsfg sdfgs dfg sdfg sdfg adfg sasgsGSDF g adfgsdfgdzbzfgaeg asg sdfg ag sdfgsdfg sdfgsdfg sd asgsdfgsdfgsdf sdfgsdfg asfdgsdfg sdfgsdfg asgadfg</string>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
-                                <color key="textColor" red="0.20800999439586443" green="0.50738055422868222" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <string key="userLabel">lblQuote - dfgsdfgsd dsfg sdfgs dfg sdfg sdfg adfg sasgsGSDF g adfgsdfgdzbzfgaeg asg sdfg ag sdfgsdfg sdfgsdfg sd asgsdfgsdfgsdf sdfgsdfg asfdgsdfg sdfgsdfg asgadfg</string>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7p-aF-aE6">
+                                <rect key="frame" x="270" y="429" width="26" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="gear.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="gear-light.png"/>
+                                <state key="highlighted" image="gearHighlight.png"/>
+                                <connections>
+                                    <action selector="openSettings:" destination="2" eventType="touchUpInside" id="mfj-1R-KmV"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.92951642335766427" blue="0.93051437043795615" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="fMN-Xr-qNY" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="02J-Ab-ac5"/>
-                            <constraint firstAttribute="bottom" secondItem="fMN-Xr-qNY" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="5mG-Ii-dln"/>
-                            <constraint firstItem="fMN-Xr-qNY" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="A2E-io-kcO"/>
-                            <constraint firstAttribute="trailing" secondItem="Va4-Jr-fT8" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="PxJ-U4-TPu"/>
-                            <constraint firstItem="zOD-JG-Opc" firstAttribute="top" secondItem="3" secondAttribute="top" constant="51" id="YDR-vS-wWm"/>
-                            <constraint firstAttribute="bottom" secondItem="Va4-Jr-fT8" secondAttribute="bottom" constant="107" id="aui-MG-I2Z"/>
-                            <constraint firstItem="zOD-JG-Opc" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="uLM-SJ-rNa"/>
+                            <constraint firstAttribute="trailing" secondItem="Va4-Jr-fT8" secondAttribute="trailing" constant="20" symbolic="YES" id="1NB-OY-v6P"/>
+                            <constraint firstItem="fMN-Xr-qNY" firstAttribute="leading" secondItem="zOD-JG-Opc" secondAttribute="leading" id="53X-tH-xKY"/>
+                            <constraint firstItem="Va4-Jr-fT8" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="61" id="8Yi-ag-bxM"/>
+                            <constraint firstItem="fMN-Xr-qNY" firstAttribute="top" secondItem="Va4-Jr-fT8" secondAttribute="bottom" constant="51" id="ANl-DN-sOF"/>
+                            <constraint firstItem="Va4-Jr-fT8" firstAttribute="top" secondItem="zOD-JG-Opc" secondAttribute="bottom" constant="35" id="Bca-nz-AaV"/>
+                            <constraint firstItem="Q7p-aF-aE6" firstAttribute="centerY" secondItem="fMN-Xr-qNY" secondAttribute="centerY" id="Fgz-cf-Yrq"/>
+                            <constraint firstItem="Q7p-aF-aE6" firstAttribute="leading" secondItem="fMN-Xr-qNY" secondAttribute="trailing" constant="8" symbolic="YES" id="YzY-Av-8dZ"/>
+                            <constraint firstItem="zOD-JG-Opc" firstAttribute="top" secondItem="O9E-NI-Rmz" secondAttribute="bottom" constant="31" id="Zum-jf-W4D"/>
+                            <constraint firstAttribute="bottom" secondItem="fMN-Xr-qNY" secondAttribute="bottom" constant="20" symbolic="YES" id="odw-pO-ekT"/>
+                            <constraint firstItem="zOD-JG-Opc" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="uYq-EP-Xvi"/>
                         </constraints>
                     </view>
                     <connections>
@@ -61,19 +84,11 @@
             </objects>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="inspiratorViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/inspiratorViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="showNextQuote:"/>
-                <relationship kind="outlet" name="lblAuthor" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lblQuote" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
+    <resources>
+        <image name="gear-light.png" width="26" height="26"/>
+        <image name="gear.png" width="26" height="26"/>
+        <image name="gearHighlight.png" width="26" height="26"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

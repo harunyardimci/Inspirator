@@ -25,6 +25,13 @@
 		B7AAD44417F46C0E00F1B5D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7AAD44217F46C0E00F1B5D3 /* InfoPlist.strings */; };
 		B7AAD44717F46C0E00F1B5D3 /* InspiratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7AAD44617F46C0E00F1B5D3 /* InspiratorTests.m */; };
 		B7AAD45117F4D2FD00F1B5D3 /* quotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7AAD45017F4D2FD00F1B5D3 /* quotes.plist */; };
+		B7AE13DE17F5C3B5004C24FD /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = B7AE13DD17F5C3B5004C24FD /* gear.png */; };
+		B7AE13E517F612D8004C24FD /* blackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B7AE13E117F612D8004C24FD /* blackButton.png */; };
+		B7AE13E617F612D8004C24FD /* blackButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7AE13E217F612D8004C24FD /* blackButton@2x.png */; };
+		B7AE13E717F612D8004C24FD /* blackButtonHighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = B7AE13E317F612D8004C24FD /* blackButtonHighlight.png */; };
+		B7AE13E817F612D8004C24FD /* blackButtonHighlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7AE13E417F612D8004C24FD /* blackButtonHighlight@2x.png */; };
+		B7AE13EE17F619B6004C24FD /* gearHighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = B7AE13ED17F619B6004C24FD /* gearHighlight.png */; };
+		B7E3535617F61F4200B4948A /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7E3535517F61F4200B4948A /* Settings.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +69,13 @@
 		B7AAD44517F46C0E00F1B5D3 /* InspiratorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InspiratorTests.h; sourceTree = "<group>"; };
 		B7AAD44617F46C0E00F1B5D3 /* InspiratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InspiratorTests.m; sourceTree = "<group>"; };
 		B7AAD45017F4D2FD00F1B5D3 /* quotes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = quotes.plist; sourceTree = "<group>"; };
+		B7AE13DD17F5C3B5004C24FD /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		B7AE13E117F612D8004C24FD /* blackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackButton.png; sourceTree = "<group>"; };
+		B7AE13E217F612D8004C24FD /* blackButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackButton@2x.png"; sourceTree = "<group>"; };
+		B7AE13E317F612D8004C24FD /* blackButtonHighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackButtonHighlight.png; sourceTree = "<group>"; };
+		B7AE13E417F612D8004C24FD /* blackButtonHighlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackButtonHighlight@2x.png"; sourceTree = "<group>"; };
+		B7AE13ED17F619B6004C24FD /* gearHighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gearHighlight.png; sourceTree = "<group>"; };
+		B7E3535517F61F4200B4948A /* Settings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Settings.xib; path = ../Settings.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +135,7 @@
 		B7AAD41817F46C0E00F1B5D3 /* Inspirator */ = {
 			isa = PBXGroup;
 			children = (
+				B7E3535517F61F4200B4948A /* Settings.xib */,
 				B7AAD42117F46C0E00F1B5D3 /* inspiratorAppDelegate.h */,
 				B7AAD42217F46C0E00F1B5D3 /* inspiratorAppDelegate.m */,
 				B7AAD42A17F46C0E00F1B5D3 /* MainStoryboard_iPhone.storyboard */,
@@ -135,6 +150,7 @@
 		B7AAD41917F46C0E00F1B5D3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B7AE13DA17F5B423004C24FD /* images */,
 				B7AAD41A17F46C0E00F1B5D3 /* Inspirator-Info.plist */,
 				B7AAD41B17F46C0E00F1B5D3 /* InfoPlist.strings */,
 				B7AAD41E17F46C0E00F1B5D3 /* main.m */,
@@ -164,6 +180,19 @@
 				B7AAD44217F46C0E00F1B5D3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7AE13DA17F5B423004C24FD /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B7AE13ED17F619B6004C24FD /* gearHighlight.png */,
+				B7AE13E117F612D8004C24FD /* blackButton.png */,
+				B7AE13E217F612D8004C24FD /* blackButton@2x.png */,
+				B7AE13E317F612D8004C24FD /* blackButtonHighlight.png */,
+				B7AE13E417F612D8004C24FD /* blackButtonHighlight@2x.png */,
+				B7AE13DD17F5C3B5004C24FD /* gear.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,9 +269,16 @@
 			files = (
 				B7AAD41D17F46C0E00F1B5D3 /* InfoPlist.strings in Resources */,
 				B7AAD42517F46C0E00F1B5D3 /* Default.png in Resources */,
+				B7AE13E817F612D8004C24FD /* blackButtonHighlight@2x.png in Resources */,
+				B7AE13E717F612D8004C24FD /* blackButtonHighlight.png in Resources */,
+				B7E3535617F61F4200B4948A /* Settings.xib in Resources */,
+				B7AE13E517F612D8004C24FD /* blackButton.png in Resources */,
+				B7AE13DE17F5C3B5004C24FD /* gear.png in Resources */,
 				B7AAD42717F46C0E00F1B5D3 /* Default@2x.png in Resources */,
 				B7AAD42917F46C0E00F1B5D3 /* Default-568h@2x.png in Resources */,
+				B7AE13E617F612D8004C24FD /* blackButton@2x.png in Resources */,
 				B7AAD42C17F46C0E00F1B5D3 /* MainStoryboard_iPhone.storyboard in Resources */,
+				B7AE13EE17F619B6004C24FD /* gearHighlight.png in Resources */,
 				B7AAD42F17F46C0E00F1B5D3 /* MainStoryboard_iPad.storyboard in Resources */,
 				B7AAD45117F4D2FD00F1B5D3 /* quotes.plist in Resources */,
 			);
@@ -364,7 +400,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -389,7 +425,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -403,7 +439,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Inspirator/Inspirator-Prefix.pch";
 				INFOPLIST_FILE = "Inspirator/Inspirator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -414,7 +452,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Inspirator/Inspirator-Prefix.pch";
 				INFOPLIST_FILE = "Inspirator/Inspirator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -472,6 +512,7 @@
 				B7AAD44C17F46C0E00F1B5D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B7AAD44D17F46C0E00F1B5D3 /* Build configuration list for PBXNativeTarget "InspiratorTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +521,7 @@
 				B7AAD44F17F46C0E00F1B5D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

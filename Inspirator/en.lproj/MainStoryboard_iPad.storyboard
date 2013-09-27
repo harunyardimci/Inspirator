@@ -1,25 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="g2M-Ze-ImH">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="4">
+        <!--Inspirator View Controller-->
+        <scene sceneID="VVR-fU-weo">
             <objects>
-                <viewController id="2" customClass="inspiratorViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                <viewController wantsFullScreenLayout="YES" id="g2M-Ze-ImH" customClass="inspiratorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dd1-f1-Dy1"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZF1-MI-Ycr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mwK-2D-g1w">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="giS-uw-GBH">
+                                <rect key="frame" x="20" y="968" width="728" height="36"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
+                                <state key="normal" title="More Inspiration?">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showNextQuote:" destination="g2M-Ze-ImH" eventType="touchUpInside" id="bdw-2Z-HMh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" text="- Albert Einstein" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gK7-wT-CGk" userLabel="lblAuthor - - Albert Einstein">
+                                <rect key="frame" x="509" y="896" width="239" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="1YE-jj-lHI"/>
+                                    <constraint firstAttribute="height" constant="21" id="pX8-fx-W0g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin-Italic" family="Cochin" pointSize="24"/>
+                                <color key="textColor" red="0.27843138579999999" green="0.60392159219999997" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="728" translatesAutoresizingMaskIntoConstraints="NO" id="zby-AU-H9H">
+                                <rect key="frame" x="20" y="193" width="728" height="442"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="442" id="YK1-Av-dUu"/>
+                                </constraints>
+                                <string key="text">dfgsdfgsd dsfg sdfgs dfg sdfg sdfg adfg sasgsGSDF g adfgsdfgdzbzfgaeg asg sdfg ag sdfgsdfg sdfgsdfg sd asgsdfgsdfgsdf sdfgsdfg asfdgsdfg sdfgsdfg asgadfg</string>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                <color key="textColor" red="0.20800999440000001" green="0.50738055419999994" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <string key="userLabel">lblQuote - dfgsdfgsd dsfg sdfgs dfg sdfg sdfg adfg sasgsGSDF g adfgsdfgdzbzfgaeg asg sdfg ag sdfgsdfg sdfgsdfg sd asgsdfgsdfgsdf sdfgsdfg asfdgsdfg sdfgsdfg asgadfg</string>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.92951642339999996" blue="0.93051437039999996" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="giS-uw-GBH" firstAttribute="leading" secondItem="mwK-2D-g1w" secondAttribute="leading" constant="20" symbolic="YES" id="Bbz-4w-6ck"/>
+                            <constraint firstAttribute="trailing" secondItem="giS-uw-GBH" secondAttribute="trailing" constant="20" symbolic="YES" id="OXN-7b-4VU"/>
+                            <constraint firstAttribute="trailing" secondItem="gK7-wT-CGk" secondAttribute="trailing" constant="20" symbolic="YES" id="UWd-2a-dBm"/>
+                            <constraint firstItem="zby-AU-H9H" firstAttribute="leading" secondItem="mwK-2D-g1w" secondAttribute="leading" constant="20" symbolic="YES" id="gfk-39-8Sf"/>
+                            <constraint firstItem="zby-AU-H9H" firstAttribute="top" secondItem="mwK-2D-g1w" secondAttribute="top" constant="193" id="ibw-zd-9ga"/>
+                            <constraint firstAttribute="bottom" secondItem="giS-uw-GBH" secondAttribute="bottom" constant="20" symbolic="YES" id="mDr-er-Aa2"/>
+                            <constraint firstAttribute="trailing" secondItem="zby-AU-H9H" secondAttribute="trailing" constant="20" symbolic="YES" id="qhM-pp-kAP"/>
+                            <constraint firstAttribute="bottom" secondItem="gK7-wT-CGk" secondAttribute="bottom" constant="107" id="s9N-Jo-20n"/>
+                        </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <connections>
+                        <outlet property="lblAuthor" destination="gK7-wT-CGk" id="qbY-Zx-fMO"/>
+                        <outlet property="lblQuote" destination="zby-AU-H9H" id="yAV-7K-v4B"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tfC-Fc-iHk" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
