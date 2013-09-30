@@ -10,15 +10,11 @@
 
 //@interface inspiratorViewController : UIViewController
 
-@interface inspiratorViewController : UIViewController<UITableViewDelegate,UITableViewDataSource> {
-	IBOutlet UITableView *tableview;
-	IBOutlet UIDatePicker *datePicker;
-	IBOutlet UITextField *eventText;
-}
+@interface inspiratorViewController : UIViewController
 
-@property (nonatomic, retain) IBOutlet UIDatePicker *datePicker;
-@property (nonatomic, retain) IBOutlet UITableView *tableview;
-@property (nonatomic, retain) IBOutlet UITextField *eventText;
+- (IBAction)postToTwitter:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UIButton *btnMore;
 
 @property (weak, nonatomic) IBOutlet UILabel *lblQuote;
 @property (weak, nonatomic) IBOutlet UILabel *lblAuthor;
@@ -28,8 +24,12 @@
 @property (copy, nonatomic) NSArray *contentArray;
 
 - (IBAction) showNextQuote:(id)sender;
-- (IBAction) scheduleAlarm2:(id) sender;
+
+- (IBAction) scheduleAlarm:(id) sender;
 
 - (IBAction) openSettings:(id)sender;
+
+// Back from settings view to main view
+- (IBAction) done:(UIStoryboardSegue *)seque;
 
 @end

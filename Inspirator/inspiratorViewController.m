@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Yardimci, Harun. All rights reserved.
 //
 
+#import <Social/Social.h>
 #import "inspiratorViewController.h"
 
 @interface inspiratorViewController ()
@@ -40,10 +41,6 @@
 
 - (void)viewDidUnload {
     
-	datePicker = nil;
-	tableview = nil;
-	eventText = nil;
-    
     _author = nil;
     _quote = nil;
     
@@ -52,6 +49,23 @@
     
 }
 
+
+- (IBAction)postToTwitter:(id)sender {
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+    {
+        SLComposeViewController *tweetSheet = [SLComposeViewController
+                                               composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [tweetSheet setInitialText:@"Great fun to learn iOS programming at appcoda.com!"];
+        [self presentViewController:tweetSheet animated:YES completion:nil];
+    } else {
+        NSLog(@"No twitter account");
+    }
+}
+
+
+-(IBAction)done:(UIStoryboardSegue *)seque{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -98,85 +112,6 @@
     
     return authorText;
 }
-
-- (IBAction) openSettings:(id)sender {
-
-    UIViewController* settingsViewController = [[UIViewController alloc] initWithNibName:@"Settings" bundle:[NSBundle mainBundle]];
-    [self.view addSubview:settingsViewController.view];
-}
-
-
-- (IBAction) scheduleAlarm:(id) sender {
-//    [eventText resignFirstResponder];
-//    
-//    NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];
-//    
-//    // Get the current date
-//    NSDate *pickerDate = [self.datePicker date];
-//    
-//    // Break the date up into components
-//    NSDateComponents *dateComponents = [calendar components:( NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit )
-//												   fromDate:pickerDate];
-//    NSDateComponents *timeComponents = [calendar components:( NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit )
-//												   fromDate:pickerDate];
-//    // Set up the fire time
-//    NSDateComponents *dateComps = [[NSDateComponents alloc] init];
-//    [dateComps setDay:[dateComponents day]];
-//    [dateComps setMonth:[dateComponents month]];
-//    [dateComps setYear:[dateComponents year]];
-//    [dateComps setHour:[timeComponents hour]];
-//	// Notification will fire in one minute
-//    [dateComps setMinute:[timeComponents minute]];
-//	[dateComps setSecond:[timeComponents second]];
-//    NSDate *itemDate = [calendar dateFromComponents:dateComps];
-//    [dateComps release];
-//    
-//    UILocalNotification *localNotif = [[UILocalNotification alloc] init];
-//    if (localNotif == nil)
-//        return;
-//    localNotif.fireDate = itemDate;
-//    localNotif.timeZone = [NSTimeZone defaultTimeZone];
-//    
-//	// Notification details
-//    localNotif.alertBody = [eventText text];
-//	// Set the action button
-//    localNotif.alertAction = @"View";
-//    
-//    localNotif.soundName = UILocalNotificationDefaultSoundName;
-//    localNotif.applicationIconBadgeNumber = 1;
-//    
-//	// Specify custom data for the notification
-//    NSDictionary *infoDict = [NSDictionary dictionaryWithObject:@"someValue" forKey:@"someKey"];
-//    localNotif.userInfo = infoDict;
-//    
-//	// Schedule the notification
-//    [[UIApplication sharedApplication] scheduleLocalNotification:localNotif];
-//    [localNotif release];
-    
-//	[self.tableview reloadData];
-}
-
-
-
-
-//- (void)addNotification {
-//    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
-//    
-//    localNotification.fireDate = [NSDate date];
-//    localNotification.alertBody = @"get your daily inspiration";
-//    localNotification.soundName = UILocalNotificationDefaultSoundName;
-//    localNotification.applicationIconBadgeNumber = 1;
-//    
-//    NSDictionary *infoDict = [NSDictionary dictionaryWithObjectsAndKeys:@"Object 1", @"Key 1", @"Object 2", @"Key 2", nil];
-//    localNotification.userInfo = infoDict;
-//    
-//    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-//    [localNotification release];
-//}
-
-//- (void) dealloc {
-//    [super dealloc];
-//}
 
 
 @end

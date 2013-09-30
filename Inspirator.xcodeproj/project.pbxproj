@@ -32,6 +32,7 @@
 		B7AE13E817F612D8004C24FD /* blackButtonHighlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7AE13E417F612D8004C24FD /* blackButtonHighlight@2x.png */; };
 		B7AE13EE17F619B6004C24FD /* gearHighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = B7AE13ED17F619B6004C24FD /* gearHighlight.png */; };
 		B7E3535617F61F4200B4948A /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7E3535517F61F4200B4948A /* Settings.xib */; };
+		B7E3535817F651F000B4948A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E3535717F651F000B4948A /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		B7AE13E417F612D8004C24FD /* blackButtonHighlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackButtonHighlight@2x.png"; sourceTree = "<group>"; };
 		B7AE13ED17F619B6004C24FD /* gearHighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gearHighlight.png; sourceTree = "<group>"; };
 		B7E3535517F61F4200B4948A /* Settings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Settings.xib; path = ../Settings.xib; sourceTree = "<group>"; };
+		B7E3535717F651F000B4948A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7E3535817F651F000B4948A /* Social.framework in Frameworks */,
 				B7AAD41317F46C0E00F1B5D3 /* UIKit.framework in Frameworks */,
 				B7AAD41517F46C0E00F1B5D3 /* Foundation.framework in Frameworks */,
 				B7AAD41717F46C0E00F1B5D3 /* CoreGraphics.framework in Frameworks */,
@@ -124,6 +127,7 @@
 		B7AAD41117F46C0E00F1B5D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7E3535717F651F000B4948A /* Social.framework */,
 				B7AAD41217F46C0E00F1B5D3 /* UIKit.framework */,
 				B7AAD41417F46C0E00F1B5D3 /* Foundation.framework */,
 				B7AAD41617F46C0E00F1B5D3 /* CoreGraphics.framework */,
